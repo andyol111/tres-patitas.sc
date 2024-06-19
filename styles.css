@@ -1,0 +1,175 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+.main-content {
+	margin-left: 250px; /* espacio para el menú lateral */
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+}
+
+.main-content-inner {
+	flex: 1;
+	padding: 20px;
+	background-image: url('image/fo.jpg');
+	background-size: 100% 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 100vh;
+	min-height: 100%; /* add this line */
+	margin: 0;
+}
+
+.sidebar {
+	width: 150px;
+	background-color: rgba(247, 124, 144, 0.8); /* rosa transparente */
+	padding: 20px;
+}
+
+.sidebar h2 {
+	margin-top: 0;
+	color: #fff;
+}
+
+.sidebar ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.sidebar li {
+	margin-bottom: 10px;
+}
+
+.sidebar a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.sidebar a:hover {
+	color: #ccc;
+}
+
+.sidebar ul li:before {
+	content: "\2022"; /* caracter de punto */
+	color: #fff;
+	margin-right: 10px;
+}
+
+header {
+	position: absolute; /* posición absoluta para que ocupe toda la pantalla */
+	top: 0; /* posición en la parte superior de la pantalla */
+	left: 0; /* posición en la parte izquierda de la pantalla */
+	width: 100%; /* ancho del 100% de la pantalla */
+	height: 60px; /* alto del header, ajusta según sea necesario */
+	background-color: rgba(247, 124, 144, 0.8); /* light pink background color */
+	color: #fff; /* color del texto del header */
+	text-align: center; /* texto centrado */
+	padding: 10px; /* padding para dar espacio entre el texto y el borde */
+}
+
+header h3 {
+	float: right; /* adiciona essa propriedade */
+	margin: 10px; /* ajuste a margem para seu gosto */
+}
+
+@media screen and (max-width: 500px) {
+	.sidebar {
+	  width: 100vw; /* adjust width to full screen width */
+	}
+}
+
+.posts {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 100px; /* agrega un margen superior de 100px */
+}
+
+.post {
+	background-color: #FFC5C5; /* tono rosa clarito */
+	padding: 20px;
+	margin: 20px;
+	width: 30%;
+	border-radius: 20px; /* cuadro redondeado */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.post h2 {
+	font-weight: bold;
+	margin-top: 0;
+	color: #333; /* texto oscuro para contraste */
+}
+
+.post p {
+	margin-bottom: 20px;
+	color: #666; /* texto gris para contraste */
+}
+
+.post:hover {
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* efecto de hover */
+	transform: scale(1.05); /* efecto de zoom */
+}
+footer {
+	background-color: #f0f0f0; /* fondo claro */
+	padding: 40px; /* espacio entre el contenido y el borde */
+	text-align: center; /* texto centrado */
+	clear: both; /* clear floats */
+	border-top: 1px solid #ddd; /* borde superior */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* sombra suave */
+	font-size: 14px; /* tamaño de fuente */
+	color: #666; /* color de texto */
+  }
+  
+  footer a {
+	color: #337ab7; /* color de enlaces */
+	text-decoration: none; /* sin subrayado */
+  }
+  
+  footer a:hover {
+	color: #23527c; /* color de enlaces al pasar el mouse */
+  }
+
+
+
+
+  header h2 {
+	float: left; /* adiciona essa propriedade */
+	margin: 10px; /* ajuste a margem para seu gosto */
+  }
+  .main-content-inner {
+	max-width: 800px; /* ajusta el ancho máximo a 800px */
+	margin: 0 auto; /* centra el contenedor horizontalmente */
+	padding: 20px; /* agrega un padding de 20px */
+  }
+  .social-media {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+  }
+  
+  .social-media li {
+	margin-right: 20px;
+  }
+  
+  .social-media a {
+	color: #666;
+	text-decoration: none;
+  }
+  
+  .social-media a:hover {
+	color: #333;
+  }
+  
+  .social-media i {
+	font-size: 24px;
+  }
